@@ -1,3 +1,5 @@
+#Simulates a circuit consisting of  grating coupler receiving input light that propogates through a ring resonator
+
 import matplotlib.pyplot as plt
 from simphony.libraries import siepic
 from simphony.simulators import SweepSimulator
@@ -37,5 +39,7 @@ simulator.multiconnect(gc_input, halfring2["out"])
 f, p = simulator.simulate()
 plt.plot(f, p)
 plt.title("Ring Resonator")
+plt.xlabel("Frequencies")
+plt.ylabel("Fractional Optical Power")
 plt.tight_layout()
 plt.show()
