@@ -12,3 +12,5 @@ To represent a single neuron, an input pixel array is represented grating couple
 Update: to fix "importing the numpy c-extensions failed" error, had to switch default terminal from Powershell to Command Prompt in VS Code
 
 Update:  Due to potential for destructive interference when combining outputs of attenuators (ring resonator, Mach-Zender Interferometer, etc), each input path must lead directly to its own photodetector.  Aflatouni paper suggests the bandwidth could be enhanced by using series of phase-shifters to combine optical outputs of the attentuators, but this has not been pratically demonstrated, and would not have a significant beneficial change to resource requirements when considering scalability of the PDNN.
+
+Update: Successful simulation using SweepSimulator of singular input circuit with grating coupler and full ring resonator.  
